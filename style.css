@@ -1,28 +1,38 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    background-color: #2e540f;
+    padding: 0;
 }
 .main{
     width: 100%;
+   
+    height: 100vh; /* Added to ensure the background covers the entire viewport */
+    background-image: url(https://images.unsplash.com/photo-1561198379-7ef247721ff9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80);
+    background-position: center; /* Aligns the background image to the center */
+    background-size: cover; 
+    
 }
 .bg-set{
     display: flex;
-    color: white;
-    margin-right: 40px;
+    /* margin-right: 20px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 10px; */
     justify-content: space-between;
     margin-bottom: 200px;
+  background-color:#1f360c;
+  font-family: 'Nunito Sans', sans-serif;
+
 }
 p{
     margin-top: 10px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 700;
+    color: black;
 }
 button{
-    background-color:#1f360c ;
+    background-color:#ad2f77;
+    border-radius: 5px;
     color: white;
     border: none;
     padding: 10px;
@@ -31,11 +41,18 @@ button{
     
     font-family: 'Nunito Sans', sans-serif;
 }
-#quote{
-    display: flex;
+.quotegen{
     color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.quote-div{
     justify-content: center;
-    background-color: #1f360c ;
+background: rgba(255, 255, 255, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.4px);
+-webkit-backdrop-filter: blur(1.4px);
+border: 1px solid rgba(255, 255, 255, 0.16);
     padding: 20px;
    margin-left: 20%;
    margin-right: 20%;
